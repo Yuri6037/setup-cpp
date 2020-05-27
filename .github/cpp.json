@@ -4,7 +4,7 @@
 			"owner": "gcc",
 			"pattern": [
 				{
-					"regexp": "(\\x1b\\[[0-9;]*m)*^([^:]+):.*(\\d+):(\\d+):\\s+(?:fatal )?(\\x1b\[[0-9;]*m)*(warning|error|note):(\\x1b\\[[0-9;]*m)*\\s+(.*)$",
+					"regexp": "(\\x1b\\[[0-9;]*m)*^([^:]+):.*(\\d+):(\\d+):\\s+(?:fatal )?(\\x1b\\[[0-9;]*m)*(warning|error|note):(\\x1b\\[[0-9;]*m)*\\s+(.*)$",
 					"file": 2,
 					"line": 4,
 					"column": 3,
