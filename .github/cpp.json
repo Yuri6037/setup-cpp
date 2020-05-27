@@ -4,7 +4,7 @@
 			"owner": "gcc-clang-linux",
 			"pattern": [
 				{
-					"regexp": "^(/home/[^:]+):.*(\\d+):(\\d+):\\s+(?:fatal )?(warning|error|note):\\s+(.*)$",
+					"regexp": "^(\\/home\\/[^:]+):(\\d+):(\\d+):\\s+(?:fatal )?(warning|error|note):\\s+(.*)$",
 					"file": 1,
 					"line": 2,
 					"column": 3,
@@ -17,7 +17,7 @@
 			"owner": "gcc-clang-osx",
 			"pattern": [
 				{
-					"regexp": "^(/Users/[^:]+):.*(\\d+):(\\d+):\\s+(?:fatal )?(warning|error|note):\\s+(.*)$",
+					"regexp": "^(\\/Users\\/[^:]+):(\\d+):(\\d+):\\s+(?:fatal )?(warning|error|note):\\s+(.*)$",
 					"file": 1,
 					"line": 2,
 					"column": 3,
