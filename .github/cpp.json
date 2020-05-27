@@ -1,15 +1,15 @@
 {
 	"problemMatcher": [
 		{
-			"owner": "gcc",
+			"owner": "gcc-clang",
 			"pattern": [
 				{
-					"regexp": "(\\x1b\\[[0-9;]*m)*^([^:]+):.*(\\d+):(\\d+):\\s+(?:fatal )?(\\x1b\\[[0-9;]*m)*(warning|error|note):(\\x1b\\[[0-9;]*m)*\\s+(.*)$",
-					"file": 2,
-					"line": 4,
-					"column": 3,
-					"severity": 6,
-					"message": 8
+					"regexp": "^(\\x1b\\[[0-9;]*m)*(\\x1b\\[K)*([^:]+):.*(\\d+):(\\d+):(\\x1b\\[[0-9;]*m)*(\\x1b\\[K)*\\s+(?:fatal )?(\\x1b\\[[0-9;]*m)*(\\x1b\\[K)*(warning|error|note):\\s+(\\x1b\\[[0-9;]*m)*(\\x1b\\[K)*(.*)$",
+					"file": 3,
+					"line": 5,
+					"column": 4,
+					"severity": 10,
+					"message": 13
 				}
 			]
 		},
