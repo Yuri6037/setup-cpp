@@ -4,12 +4,12 @@
 			"owner": "gcc-clang",
 			"pattern": [
 				{
-					"regexp": "^(\\x1b\\[[0-9;]*m)*(\\x1b\\[K)*([^:]+):.*(\\d+):(\\d+):(\\x1b\\[[0-9;]*m)*(\\x1b\\[K)*\\s+(?:fatal )?(\\x1b\\[[0-9;]*m)*(\\x1b\\[K)*(warning|error|note):\\s+(\\x1b\\[[0-9;]*m)*(\\x1b\\[K)*(.*)$",
-					"file": 3,
-					"line": 5,
-					"column": 4,
-					"severity": 10,
-					"message": 13
+					"regexp": "^([^:]+):.*(\\d+):(\\d+):\\s+(?:fatal )?(warning|error|note):\\s+(.*)$",
+					"file": 1,
+					"line": 2,
+					"column": 3,
+					"severity": 4,
+					"message": 5
 				}
 			]
 		},
