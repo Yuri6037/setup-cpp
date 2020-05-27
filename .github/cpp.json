@@ -4,12 +4,12 @@
 			"owner": "gcc",
 			"pattern": [
 				{
-					"regexp": "^([^:]+):.*(\\d+):(\\d+):\\s+(?:fatal )?(warning|error|note):\\s+(.*)$",
-					"file": 1,
-					"line": 2,
+					"regexp": "(\\x1b\\[[0-9;]*m)*^([^:]+):.*(\\d+):(\\d+):\\s+(?:fatal )?(\\x1b\[[0-9;]*m)*(warning|error|note):(\\x1b\\[[0-9;]*m)*\\s+(.*)$",
+					"file": 2,
+					"line": 4,
 					"column": 3,
-					"severity": 4,
-					"message": 5
+					"severity": 6,
+					"message": 8
 				}
 			]
 		},
@@ -23,29 +23,6 @@
 					"column": 3,
 					"severity": 4,
 					"message": 5
-				}
-			]
-		},
-		{
-			"owner": "make",
-			"pattern": [
-				{
-					"regexp": "\\[([^:]+)(?::(\\d+):(.+))?\\]\\s(Error).+",
-					"file": 1,
-					"line": 2,
-					"severity": 4,
-					"message": 0
-				}
-			]
-		},
-		{
-			"owner": "configure",
-			"pattern": [
-				{
-					"regexp": "(configure): (error): (.+)",
-					"file": 1,
-					"severity": 2,
-					"message": 3
 				}
 			]
 		}
