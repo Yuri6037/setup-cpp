@@ -1,10 +1,23 @@
 {
 	"problemMatcher": [
 		{
-			"owner": "gcc-clang",
+			"owner": "gcc-clang-linux",
 			"pattern": [
 				{
-					"regexp": "^([^:]+):.*(\\d+):(\\d+):\\s+(?:fatal )?(warning|error|note):\\s+(.*)$",
+					"regexp": "^(/home/[^:]+):.*(\\d+):(\\d+):\\s+(?:fatal )?(warning|error|note):\\s+(.*)$",
+					"file": 1,
+					"line": 2,
+					"column": 3,
+					"severity": 4,
+					"message": 5
+				}
+			]
+		},
+		{
+			"owner": "gcc-clang-osx",
+			"pattern": [
+				{
+					"regexp": "^(/Users/[^:]+):.*(\\d+):(\\d+):\\s+(?:fatal )?(warning|error|note):\\s+(.*)$",
 					"file": 1,
 					"line": 2,
 					"column": 3,
